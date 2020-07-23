@@ -88,11 +88,11 @@ def days_before_month(month):
     elif month == 'september':
         return 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31
     elif month == 'october':
-        return 273
+        return 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30
     elif month == 'november':
-        return 304
+        return 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31
     elif month == 'december':
-        return 334
+        return 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 30
 
 #print("testing days before August in a leap year: ", days_before_month('august',True), "should be 213")
 #print("testing days before June in a non-leap year: ", days_before_month('june',False), "should be 151")
@@ -227,7 +227,7 @@ def weekday(month,day,year):
 	return day_of_week(total_days(month,day,year))
 
 
-print("testing 12/13/1989: ", weekday('december',13,1989), "should be a something")
+print("testing 12/13/1989: ", weekday('december',13,1989), "should be a Wednesday")
 print("testing 5/16/2004: ", weekday('may',16,2004), "should be a Sunday")
 print("testing 8/26/2135: ", weekday('august',26,2135), "should be a Friday")
 print("testing 5/1/1845: ", weekday('may',1,1845), "should be a Thursday")
